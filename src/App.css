@@ -1,0 +1,38 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+.app {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+input {
+  padding: 10px;
+  margin: 15px 0;
+}
+
+input ~ span {
+  color: red;
+  display: none;
+}
+
+input:invalid[data-focused="true"] ~ span {
+  display: block;
+}
+
+.form-control {
+  width: 280px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  /* border: 2px solid red; */
+}
+
+.btn {
+  width: 100%;
+}
